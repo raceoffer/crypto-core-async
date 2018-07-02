@@ -5,6 +5,7 @@ export { BitcoinCashWallet } from 'crypto-core/lib/wallet/bitcore/bitcoincashwal
 export { LitecoinWallet } from 'crypto-core/lib/wallet/bitcore/litecoinwallet';
 export { EthereumWallet } from 'crypto-core/lib/wallet/ethereum/ethereumwallet';
 export { ERC20Wallet } from 'crypto-core/lib/wallet/ethereum/erc20wallet';
+export { NemWallet } from 'crypto-core/lib/wallet/nem/nemwallet';
 
 export { SchnorrProof } from 'crypto-core/lib/primitives/schnorrproof';
 export { PedersenScheme } from 'crypto-core/lib/primitives/pedersenscheme';
@@ -15,10 +16,15 @@ export { SignerEcdsa } from './lib/signerecdsa';
 export { PaillierProver } from './lib/paillierprover';
 export { PaillierVerifier } from './lib/paillierverifier';
 
+export { CompoundKeyEddsa } from './lib/compoundkeyeddsa';
+export { SignerEddsa } from './lib/signereddsa';
+export { SyncSession } from './lib/syncsession';
+
 export { BitcoinTransaction } from './lib/bitcointransaction';
 export { BitcoinCashTransaction } from './lib/bitcoincashtransaction';
 export { LitecoinTransaction } from './lib/litecointransaction';
 export { EthereumTransaction } from './lib/ethereumtransaction';
+export { NemTransaction } from './lib/nemtransaction';
 
 import * as Utils from './lib/utils';
 export { Utils };
