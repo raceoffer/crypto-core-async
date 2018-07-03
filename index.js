@@ -29,4 +29,7 @@ export { NemTransaction } from './lib/nemtransaction';
 import * as Utils from './lib/utils';
 export { Utils };
 
+import * as Marshal from 'crypto-core/lib/marshal';
+export { Marshal };
+
 export { createWorker } from './lib/createworker';
