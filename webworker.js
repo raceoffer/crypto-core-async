@@ -16,25 +16,36 @@ import defaultTo from 'lodash/defaultTo';
 import { wrap, unwrap } from 'crypto-core/lib/marshal';
 
 import * as Utils from 'crypto-core/lib/utils';
-import { CompoundKey } from 'crypto-core/lib/primitives/compoundkey';
-import { PaillierProver } from 'crypto-core/lib/primitives/paillierprover';
-import { PaillierVerifier } from 'crypto-core/lib/primitives/paillierverifier';
-import { Signer } from 'crypto-core/lib/primitives/signer';
+
+import { CompoundKey as CompoundKeyEcdsa } from 'crypto-core/lib/primitives/ecdsa/compoundkey';
+import { PaillierProver } from 'crypto-core/lib/primitives/ecdsa/paillierprover';
+import { PaillierVerifier } from 'crypto-core/lib/primitives/ecdsa/paillierverifier';
+import { Signer as SignerEcdsa } from 'crypto-core/lib/primitives/ecdsa/signer';
+
+import { CompoundKey as CompoundKeyEddsa } from 'crypto-core/lib/primitives/eddsa/compoundkey';
+import { SyncSession } from 'crypto-core/lib/primitives/eddsa/syncsession';
+import { Signer as SignerEddsa } from 'crypto-core/lib/primitives/eddsa/signer';
+
 import { BitcoinTransaction } from 'crypto-core/lib/transaction/bitcore/bitcointransaction';
 import { BitcoinCashTransaction } from 'crypto-core/lib/transaction/bitcore/bitcoincashtransaction';
 import { LitecoinTransaction } from 'crypto-core/lib/transaction/bitcore/litecointransaction';
 import { EthereumTransaction } from 'crypto-core/lib/transaction/ethereum/ethereumtransaction';
+import { NemTransaction } from 'crypto-core/lib/transaction/nem/nemtransaction';
 
 const CryptoCore = {
   Utils,
-  CompoundKey,
+  CompoundKeyEcdsa,
   PaillierProver,
   PaillierVerifier,
-  Signer,
+  SignerEcdsa,
+  CompoundKeyEddsa,
+  SyncSession,
+  SignerEddsa,
   BitcoinTransaction,
   BitcoinCashTransaction,
   LitecoinTransaction,
-  EthereumTransaction
+  EthereumTransaction,
+  NemTransaction
 };
 
 registerPromiseWorker(async message => {
