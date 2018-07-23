@@ -25,6 +25,7 @@ export { BitcoinCashTransaction } from './lib/bitcoincashtransaction';
 export { LitecoinTransaction } from './lib/litecointransaction';
 export { EthereumTransaction } from './lib/ethereumtransaction';
 export { NemTransaction } from './lib/nemtransaction';
+export { NeoTransaction } from './lib/neotransaction';
 
 import * as Utils from './lib/utils';
 export { Utils };

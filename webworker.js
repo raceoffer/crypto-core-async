@@ -31,6 +31,7 @@ import { BitcoinCashTransaction } from 'crypto-core/lib/transaction/bitcore/bitc
 import { LitecoinTransaction } from 'crypto-core/lib/transaction/bitcore/litecointransaction';
 import { EthereumTransaction } from 'crypto-core/lib/transaction/ethereum/ethereumtransaction';
 import { NemTransaction } from 'crypto-core/lib/transaction/nem/nemtransaction';
+import { NeoTransaction } from 'crypto-core/lib/transaction/neo/neotransaction';
 
 const CryptoCore = {
   Utils,
@@ -45,7 +46,8 @@ const CryptoCore = {
   BitcoinCashTransaction,
   LitecoinTransaction,
   EthereumTransaction,
-  NemTransaction
+  NemTransaction,
+  NeoTransaction
 };
 
 registerPromiseWorker(async message => {
