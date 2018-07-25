@@ -6,6 +6,7 @@ export { LitecoinWallet } from 'crypto-core/lib/wallet/bitcore/litecoinwallet';
 export { EthereumWallet } from 'crypto-core/lib/wallet/ethereum/ethereumwallet';
 export { ERC20Wallet } from 'crypto-core/lib/wallet/ethereum/erc20wallet';
 export { NemWallet } from 'crypto-core/lib/wallet/nem/nemwallet';
+export { NeoWallet } from 'crypto-core/lib/wallet/neo/neowallet';
 
 export { SchnorrProof } from 'crypto-core/lib/primitives/schnorrproof';
 export { PedersenScheme } from 'crypto-core/lib/primitives/pedersenscheme';
