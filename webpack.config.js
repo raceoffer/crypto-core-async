@@ -1,5 +1,6 @@
 'use strict';
 
+const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
@@ -16,5 +17,10 @@ module.exports = {
     fs: 'empty',
     net: 'empty',
     tls: 'empty'
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+		  window: {}
+	  })
+  ]
 };
