@@ -2,10 +2,24 @@
 
 const webpack = require('webpack');
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
-module.exports = {
+var config = {
   entry: path.resolve(__dirname, 'webworker.js'),
   devtool: 'source-map',
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          cache: true,
+          parallel: true,
+          sourceMap: true,
+          ie8: false,
+          safari10: true
+        }
+      })
+    ]
+  },
   output: {
     path: __dirname,
     filename: 'webworker.bundle.js'
@@ -23,4 +37,11 @@ module.exports = {
 		  window: {}
 	  })
   ]
+};
+
+module.exports = (env, argv) => {
+  if (argv.mode === 'development') {
+    config.optimization =  {minimize: false};
+  }
+  return config;
 };
