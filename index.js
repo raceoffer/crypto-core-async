@@ -12,9 +12,40 @@ export { DDS } from 'crypto-core/lib/primitives/dds';
 
 export { PaillierPublicKey, PaillierSecretKey } from 'crypto-core/lib/primitives/ecdsa/paillierkeys';
 
-export { DistributedEcdsaKey, DistributedEcdsaKeyShard } from './lib/ecdsa/distributedkey';
-export { DistributedEcdsaSyncSession, DistributedEcdsaSyncSessionShard } from './lib/ecdsa/distributedsyncsession';
-export { DistributedEcdsaSignSession, DistributedEcdsaSignSessionShard } from './lib/ecdsa/distributedsignsession';
+export {
+  DistributedEcdsaKey,
+  DistributedEcdsaKeyShard
+} from './lib/ecdsa/distributedkey';
+
+export {
+  EcdsaInitialCommitment,
+  EcdsaInitialDecommitment,
+  EcdsaInitialData,
+  EcdsaChallengeCommitment,
+  EcdsaChallengeDecommitment,
+  EcdsaResponseCommitment,
+  EcdsaResponseDecommitment,
+  EcdsaSyncData,
+  EcdsaShardSyncData
+} from 'crypto-core/lib/primitives/ecdsa/distributedsyncsession';
+
+export {
+  DistributedEcdsaSyncSession,
+  DistributedEcdsaSyncSessionShard
+} from './lib/ecdsa/distributedsyncsession';
+
+export {
+  EcdsaEntropyCommitment,
+  EcdsaEntropyDecommitment,
+  EcdsaEntropyData,
+  EcdsaPartialSignature,
+  EcdsaSignature
+} from 'crypto-core/lib/primitives/ecdsa/distributedsignsession';
+
+export {
+  DistributedEcdsaSignSession,
+  DistributedEcdsaSignSessionShard
+} from './lib/ecdsa/distributedsignsession';
 
 export { BitcoinTransaction } from './lib/bitcointransaction';
 export { BitcoinCashTransaction } from './lib/bitcoincashtransaction';
