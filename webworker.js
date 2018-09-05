@@ -17,36 +17,28 @@ import { wrap, unwrap } from 'crypto-core/lib/marshal';
 
 import * as Utils from 'crypto-core/lib/utils';
 
-import { CompoundKey as CompoundKeyEcdsa } from 'crypto-core/lib/primitives/ecdsa/compoundkey';
-import { PaillierProver } from 'crypto-core/lib/primitives/ecdsa/paillierprover';
-import { PaillierVerifier } from 'crypto-core/lib/primitives/ecdsa/paillierverifier';
-import { Signer as SignerEcdsa } from 'crypto-core/lib/primitives/ecdsa/signer';
-
-import { CompoundKey as CompoundKeyEddsa } from 'crypto-core/lib/primitives/eddsa/compoundkey';
-import { SyncSession } from 'crypto-core/lib/primitives/eddsa/syncsession';
-import { Signer as SignerEddsa } from 'crypto-core/lib/primitives/eddsa/signer';
+import { DistributedEcdsaKey, DistributedEcdsaKeyShard } from 'crypto-core/lib/primitives/ecdsa/distributedkey';
+import { DistributedEcdsaSyncSession, DistributedEcdsaSyncSessionShard } from 'crypto-core/lib/primitives/ecdsa/distributedsyncsession';
+import { DistributedEcdsaSignSession, DistributedEcdsaSignSessionShard } from 'crypto-core/lib/primitives/ecdsa/distributedsignsession';
 
 import { BitcoinTransaction } from 'crypto-core/lib/transaction/bitcore/bitcointransaction';
 import { BitcoinCashTransaction } from 'crypto-core/lib/transaction/bitcore/bitcoincashtransaction';
 import { LitecoinTransaction } from 'crypto-core/lib/transaction/bitcore/litecointransaction';
 import { EthereumTransaction } from 'crypto-core/lib/transaction/ethereum/ethereumtransaction';
-import { NemTransaction } from 'crypto-core/lib/transaction/nem/nemtransaction';
 import { NeoTransaction } from 'crypto-core/lib/transaction/neo/neotransaction';
 
 const CryptoCore = {
   Utils,
-  CompoundKeyEcdsa,
-  PaillierProver,
-  PaillierVerifier,
-  SignerEcdsa,
-  CompoundKeyEddsa,
-  SyncSession,
-  SignerEddsa,
+  DistributedEcdsaKey,
+  DistributedEcdsaKeyShard,
+  DistributedEcdsaSyncSession,
+  DistributedEcdsaSyncSessionShard,
+  DistributedEcdsaSignSession,
+  DistributedEcdsaSignSessionShard,
   BitcoinTransaction,
   BitcoinCashTransaction,
   LitecoinTransaction,
   EthereumTransaction,
-  NemTransaction,
   NeoTransaction
 };
 

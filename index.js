@@ -8,28 +8,27 @@ export { ERC20Wallet } from 'crypto-core/lib/wallet/ethereum/erc20wallet';
 export { NemWallet } from 'crypto-core/lib/wallet/nem/nemwallet';
 export { NeoWallet } from 'crypto-core/lib/wallet/neo/neowallet';
 
-export { SchnorrProof } from 'crypto-core/lib/primitives/schnorrproof';
-export { PedersenScheme } from 'crypto-core/lib/primitives/pedersenscheme';
 export { DDS } from 'crypto-core/lib/primitives/dds';
 
-export { CompoundKeyEcdsa } from './lib/compoundkeyecdsa';
-export { SignerEcdsa } from './lib/signerecdsa';
-export { PaillierProver } from './lib/paillierprover';
-export { PaillierVerifier } from './lib/paillierverifier';
+export { PaillierPublicKey, PaillierSecretKey } from 'crypto-core/lib/primitives/ecdsa/paillierkeys';
 
-export { CompoundKeyEddsa } from './lib/compoundkeyeddsa';
-export { SignerEddsa } from './lib/signereddsa';
-export { SyncSession } from './lib/syncsession';
+export { DistributedEcdsaKey, DistributedEcdsaKeyShard } from './lib/ecdsa/distributedkey';
+export { DistributedEcdsaSyncSession, DistributedEcdsaSyncSessionShard } from './lib/ecdsa/distributedsyncsession';
+export { DistributedEcdsaSignSession, DistributedEcdsaSignSessionShard } from './lib/ecdsa/distributedsignsession';
 
 export { BitcoinTransaction } from './lib/bitcointransaction';
 export { BitcoinCashTransaction } from './lib/bitcoincashtransaction';
 export { LitecoinTransaction } from './lib/litecointransaction';
 export { EthereumTransaction } from './lib/ethereumtransaction';
-export { NemTransaction } from './lib/nemtransaction';
 export { NeoTransaction } from './lib/neotransaction';
 
 import * as Utils from './lib/utils';
 export { Utils };
+
+import * as Convert from 'crypto-core/lib/convert';
+export { Convert };
+
+export { Curve } from 'crypto-core/lib/curves';
 
 import * as Marshal from 'crypto-core/lib/marshal';
 export { Marshal };

@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "crypto-core": "git+https://github.com/CaspianTechnologies/crypto-core.git#92ef9317be09f34f9c19dff1a789711a6c3a41e6",
+    "crypto-core": "file:../crypto-core",
     "promise-worker": "^1.1.1"
   },
   "devDependencies": {
