@@ -47,6 +47,19 @@ export {
   DistributedEcdsaSignSessionShard
 } from './lib/ecdsa/distributedsignsession';
 
+export {
+  BitcoreEntropyCommitment,
+  BitcoreEntropyDecommitment,
+  BitcoreEntropyData,
+  BitcorePartialSignature,
+  BitcoreSignature
+} from 'crypto-core/lib/transaction/bitcore/bitcoretransaction';
+
+export {
+  BitcoreSignSession,
+  BitcoreSignSessionShard
+} from './lib/bitcoretransaction';
+
 export { BitcoinTransaction } from './lib/bitcointransaction';
 export { BitcoinCashTransaction } from './lib/bitcoincashtransaction';
 export { LitecoinTransaction } from './lib/litecointransaction';
