@@ -21,6 +21,7 @@ import { DistributedEcdsaKey, DistributedEcdsaKeyShard } from 'crypto-core/lib/p
 import { DistributedEcdsaSyncSession, DistributedEcdsaSyncSessionShard } from 'crypto-core/lib/primitives/ecdsa/distributedsyncsession';
 import { DistributedEcdsaSignSession, DistributedEcdsaSignSessionShard } from 'crypto-core/lib/primitives/ecdsa/distributedsignsession';
 
+import { BitcoreSignSession, BitcoreSignSessionShard } from 'crypto-core/lib/transaction/bitcore/bitcoretransaction';
 import { BitcoinTransaction } from 'crypto-core/lib/transaction/bitcore/bitcointransaction';
 import { BitcoinCashTransaction } from 'crypto-core/lib/transaction/bitcore/bitcoincashtransaction';
 import { LitecoinTransaction } from 'crypto-core/lib/transaction/bitcore/litecointransaction';
@@ -35,6 +36,8 @@ const CryptoCore = {
   DistributedEcdsaSyncSessionShard,
   DistributedEcdsaSignSession,
   DistributedEcdsaSignSessionShard,
+  BitcoreSignSession,
+  BitcoreSignSessionShard,
   BitcoinTransaction,
   BitcoinCashTransaction,
   LitecoinTransaction,
