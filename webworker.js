@@ -17,9 +17,9 @@ import { wrap, unwrap } from 'crypto-core/lib/marshal';
 
 import * as Utils from 'crypto-core/lib/utils';
 
-import { DistributedEcdsaKey, DistributedEcdsaKeyShard } from 'crypto-core/lib/primitives/ecdsa/distributedkey';
-import { DistributedEcdsaSyncSession, DistributedEcdsaSyncSessionShard } from 'crypto-core/lib/primitives/ecdsa/distributedsyncsession';
-import { DistributedEcdsaSignSession, DistributedEcdsaSignSessionShard } from 'crypto-core/lib/primitives/ecdsa/distributedsignsession';
+import { DistributedEcdsaKey, DistributedEcdsaKeyShard } from 'crypto-core/lib/primitives/ecdsa/distributedecdsakey';
+import { DistributedEcdsaSyncSession, DistributedEcdsaSyncSessionShard } from 'crypto-core/lib/primitives/ecdsa/distributedecdsasyncsession';
+import { DistributedEcdsaSignSession, DistributedEcdsaSignSessionShard } from 'crypto-core/lib/primitives/ecdsa/distributedecdsasignsession';
 
 import { BitcoreSignSession, BitcoreSignSessionShard } from 'crypto-core/lib/transaction/bitcore/bitcoretransaction';
 import { BitcoinTransaction } from 'crypto-core/lib/transaction/bitcore/bitcointransaction';

@@ -12,10 +12,12 @@ export { DDS } from 'crypto-core/lib/primitives/dds';
 
 export { PaillierPublicKey, PaillierSecretKey } from 'crypto-core/lib/primitives/ecdsa/paillierkeys';
 
+export { EddsaKeyPair } from 'crypto-core/lib/primitives/eddsa/eddsakeypair';
+
 export {
   DistributedEcdsaKey,
   DistributedEcdsaKeyShard
-} from './lib/ecdsa/distributedkey';
+} from './lib/ecdsa/distributedecdsakey';
 
 export {
   EcdsaInitialCommitment,
@@ -27,12 +29,12 @@ export {
   EcdsaResponseDecommitment,
   EcdsaSyncData,
   EcdsaShardSyncData
-} from 'crypto-core/lib/primitives/ecdsa/distributedsyncsession';
+} from 'crypto-core/lib/primitives/ecdsa/distributedecdsasyncsession';
 
 export {
   DistributedEcdsaSyncSession,
   DistributedEcdsaSyncSessionShard
-} from './lib/ecdsa/distributedsyncsession';
+} from './lib/ecdsa/distributedecdsasyncsession';
 
 export {
   EcdsaEntropyCommitment,
@@ -40,12 +42,41 @@ export {
   EcdsaEntropyData,
   EcdsaPartialSignature,
   EcdsaSignature
-} from 'crypto-core/lib/primitives/ecdsa/distributedsignsession';
+} from 'crypto-core/lib/primitives/ecdsa/distributedecdsasignsession';
 
 export {
   DistributedEcdsaSignSession,
   DistributedEcdsaSignSessionShard
-} from './lib/ecdsa/distributedsignsession';
+} from './lib/ecdsa/distributedecdsasignsession';
+
+export {
+  DistributedEddsaKey
+} from './lib/eddsa/distributededdsakey';
+
+export {
+  EddsaCommitment,
+  EddsaDecommitment,
+  EddsaData,
+  EddsaSyncData
+} from 'crypto-core/lib/primitives/eddsa/distributededdsasyncsession';
+
+export {
+  DistributedEddsaSyncSession,
+  DistributedEddsaSyncSessionShard
+} from './lib/eddsa/distributededdsasyncsession';
+
+export {
+  EddsaEntropyCommitment,
+  EddsaEntropyDecommitment,
+  EddsaEntropyData,
+  EddsaPartialSignature,
+  EddsaSignature
+} from 'crypto-core/lib/primitives/eddsa/distributededdsasignsession';
+
+export {
+  DistributedEddsaSignSession,
+  DistributedEddsaSignSessionShard
+} from './lib/eddsa/distributededdsasignsession';
 
 export {
   BitcoreEntropyCommitment,
@@ -65,6 +96,7 @@ export { BitcoinCashTransaction } from './lib/bitcoincashtransaction';
 export { LitecoinTransaction } from './lib/litecointransaction';
 export { EthereumTransaction } from './lib/ethereumtransaction';
 export { NeoTransaction } from './lib/neotransaction';
+export { NemTransaction } from './lib/nemtransaction';
 
 import * as Utils from './lib/utils';
 export { Utils };
