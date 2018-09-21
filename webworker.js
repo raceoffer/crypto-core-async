@@ -17,15 +17,14 @@ import { wrap, unwrap } from 'crypto-core/lib/marshal';
 
 import * as Utils from 'crypto-core/lib/utils';
 
-import { CompoundKey as CompoundKeyEcdsa } from 'crypto-core/lib/primitives/ecdsa/compoundkey';
-import { PaillierProver } from 'crypto-core/lib/primitives/ecdsa/paillierprover';
-import { PaillierVerifier } from 'crypto-core/lib/primitives/ecdsa/paillierverifier';
-import { Signer as SignerEcdsa } from 'crypto-core/lib/primitives/ecdsa/signer';
+import { DistributedEcdsaKey, DistributedEcdsaKeyShard } from 'crypto-core/lib/primitives/ecdsa/distributedecdsakey';
+import { DistributedEddsaKey } from 'crypto-core/lib/primitives/eddsa/distributededdsakey';
+import { DistributedEcdsaSyncSession, DistributedEcdsaSyncSessionShard } from 'crypto-core/lib/primitives/ecdsa/distributedecdsasyncsession';
+import { DistributedEcdsaSignSession, DistributedEcdsaSignSessionShard } from 'crypto-core/lib/primitives/ecdsa/distributedecdsasignsession';
+import { DistributedEddsaSyncSession, DistributedEddsaSyncSessionShard } from 'crypto-core/lib/primitives/eddsa/distributededdsasyncsession';
+import { DistributedEddsaSignSession, DistributedEddsaSignSessionShard } from 'crypto-core/lib/primitives/eddsa/distributededdsasignsession';
 
-import { CompoundKey as CompoundKeyEddsa } from 'crypto-core/lib/primitives/eddsa/compoundkey';
-import { SyncSession } from 'crypto-core/lib/primitives/eddsa/syncsession';
-import { Signer as SignerEddsa } from 'crypto-core/lib/primitives/eddsa/signer';
-
+import { BitcoreSignSession, BitcoreSignSessionShard } from 'crypto-core/lib/transaction/bitcore/bitcoretransaction';
 import { BitcoinTransaction } from 'crypto-core/lib/transaction/bitcore/bitcointransaction';
 import { BitcoinCashTransaction } from 'crypto-core/lib/transaction/bitcore/bitcoincashtransaction';
 import { LitecoinTransaction } from 'crypto-core/lib/transaction/bitcore/litecointransaction';
@@ -35,13 +34,19 @@ import { NeoTransaction } from 'crypto-core/lib/transaction/neo/neotransaction';
 
 const CryptoCore = {
   Utils,
-  CompoundKeyEcdsa,
-  PaillierProver,
-  PaillierVerifier,
-  SignerEcdsa,
-  CompoundKeyEddsa,
-  SyncSession,
-  SignerEddsa,
+  DistributedEcdsaKey,
+  DistributedEcdsaKeyShard,
+  DistributedEcdsaSyncSession,
+  DistributedEcdsaSyncSessionShard,
+  DistributedEcdsaSignSession,
+  DistributedEcdsaSignSessionShard,
+  DistributedEddsaKey,
+  DistributedEddsaSyncSession,
+  DistributedEddsaSyncSessionShard,
+  DistributedEddsaSignSession,
+  DistributedEddsaSignSessionShard,
+  BitcoreSignSession,
+  BitcoreSignSessionShard,
   BitcoinTransaction,
   BitcoinCashTransaction,
   LitecoinTransaction,
