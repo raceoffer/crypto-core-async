@@ -20,10 +20,6 @@ var config = {
       })
     ]
   },
-  output: {
-    path: __dirname,
-    filename: 'webworker.bundle.js'
-  },
   resolve: {
     modules: ['node_modules']
   },
@@ -34,14 +30,24 @@ var config = {
   },
   plugins: [
     new webpack.DefinePlugin({
-		  window: {}
-	  })
+      window: {}
+    })
   ]
 };
 
 module.exports = (env, argv) => {
   if (argv.mode === 'development') {
-    config.optimization =  {minimize: false};
+    config.optimization = { minimize: false };
+  
+    config.output = {
+      path: __dirname,
+      filename: 'webworker-dev.bundle.js'
+    };
+  } else {
+    config.output = {
+      path: __dirname,
+      filename: 'webworker-prod.bundle.js'
+    };
   }
   return config;
 };
