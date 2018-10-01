@@ -136,9 +136,9 @@
       "integrity": "sha512-1w52Nyx4Gq47uuu0EVcsHBxZFJgurQ+rTKS3qMHxR1GY2T8c2AJYd6vZoZ9q1rupaDjU0yT+Jc2XTyXkjeMA+Q=="
     },
     "@types/node": {
-      "version": "10.11.0",
-      "resolved": "https://registry.npmjs.org/@types/node/-/node-10.11.0.tgz",
-      "integrity": "sha512-R4Dvw6KjSYn/SpvjRchBOwXr14vVVcFXCtnM3f0aLvlJS8a599rrcEoihcP2/+Z/f75E5GNPd4aWM7j1yei9og=="
+      "version": "10.11.3",
+      "resolved": "https://registry.npmjs.org/@types/node/-/node-10.11.3.tgz",
+      "integrity": "sha512-3AvcEJAh9EMatxs+OxAlvAEs7OTy6AG94mcH1iqyVDwVVndekLxzwkWQ/Z4SDbY6GO2oyUXyWW8tQ4rENSSQVQ=="
     },
     "@webassemblyjs/ast": {
       "version": "1.7.6",
@@ -2439,7 +2439,7 @@
       }
     },
     "crypto-core": {
-      "version": "git+https://github.com/CaspianTechnologies/crypto-core.git#3f982e2a9128021abd44f838efb514b918565a26",
+      "version": "git+https://github.com/CaspianTechnologies/crypto-core.git#58d3ab6c63fada1b228eea83b88ab391d64415cf",
       "requires": {
         "@cityofzion/neon-js": "3.11.0",
         "aes-js": "3.1.1",
@@ -2451,7 +2451,7 @@
         "elliptic": "6.3.0",
         "eth-lib": "0.2.8",
         "ethereum-input-data-decoder": "0.0.4",
-        "etherscan-api": "8.1.4",
+        "etherscan-api": "8.1.5",
         "ethjs-unit": "0.1.6",
         "hash.js": "1.1.5",
         "hmac-drbg": "1.0.1",
@@ -3114,9 +3114,9 @@
       }
     },
     "etherscan-api": {
-      "version": "8.1.4",
-      "resolved": "https://registry.npmjs.org/etherscan-api/-/etherscan-api-8.1.4.tgz",
-      "integrity": "sha512-MsoryIcCbWG/2k/UfDbx0B8FLwfxEs5dgbNsGXktVjJumEu/VFpJhrxC0C8hQzQJh7UDvjB7Qbez/UmGG9azvQ==",
+      "version": "8.1.5",
+      "resolved": "https://registry.npmjs.org/etherscan-api/-/etherscan-api-8.1.5.tgz",
+      "integrity": "sha512-P5pgGlv2mMwx8U48MnuytxNRZmKsVOtAGrvH0xof7ufRnZCh7KgE/nwgNlx96zq5qhfGl17qjUpxiktZVFepiQ==",
       "requires": {
         "axios": "0.18.0",
         "gh-pages": "2.0.0",
@@ -3812,7 +3812,7 @@
     },
     "finalhandler": {
       "version": "1.1.1",
-      "resolved": "https://registry.npmjs.org/finalhandler/-/finalhandler-1.1.1.tgz",
+      "resolved": "http://registry.npmjs.org/finalhandler/-/finalhandler-1.1.1.tgz",
       "integrity": "sha512-Y1GUDo39ez4aHAw7MysnUD5JzYX+WaIj8I57kO3aEPT1fFRL4sr7mjei97FgnwhAyyzRYmQZaTHb2+9uZ1dPtg==",
       "requires": {
         "debug": "2.6.9",
@@ -6604,7 +6604,7 @@
         "@protobufjs/pool": "1.1.0",
         "@protobufjs/utf8": "1.1.0",
         "@types/long": "4.0.0",
-        "@types/node": "10.11.0",
+        "@types/node": "10.11.3",
         "long": "4.0.0"
       }
     },
@@ -8798,7 +8798,7 @@
     },
     "uuid": {
       "version": "2.0.1",
-      "resolved": "https://registry.npmjs.org/uuid/-/uuid-2.0.1.tgz",
+      "resolved": "http://registry.npmjs.org/uuid/-/uuid-2.0.1.tgz",
       "integrity": "sha1-wqMN7bPlNdcsz4LjQ5QaULqFM6w="
     },
     "v8-compile-cache": {
@@ -9382,7 +9382,7 @@
           "resolved": "https://registry.npmjs.org/ethers/-/ethers-4.0.0-beta.1.tgz",
           "integrity": "sha512-SoYhktEbLxf+fiux5SfCEwdzWENMvgIbMZD90I62s4GZD9nEjgEWy8ZboI3hck193Vs0bDoTohDISx84f2H2tw==",
           "requires": {
-            "@types/node": "10.11.0",
+            "@types/node": "10.11.3",
             "aes-js": "3.0.0",
             "bn.js": "4.11.8",
             "elliptic": "6.3.3",

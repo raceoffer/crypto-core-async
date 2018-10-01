@@ -9,10 +9,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "npm run webpack-dev && npm run webpack-prod"
   },
-  "author": "",
+  "author": "Caspian Technologies PTE. LTD.",
+  "repository": "https://github.com/CaspianTechnologies/crypto-core-async.git",
   "license": "ISC",
   "dependencies": {
-    "crypto-core": "https://github.com/CaspianTechnologies/crypto-core.git#3f982e2a9128021abd44f838efb514b918565a26",
+    "crypto-core": "git+https://github.com/CaspianTechnologies/crypto-core.git#58d3ab6c63fada1b228eea83b88ab391d64415cf",
     "promise-worker": "^1.1.1"
   },
   "devDependencies": {
