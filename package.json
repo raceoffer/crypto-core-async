@@ -13,7 +13,7 @@
   "repository": "https://github.com/CaspianTechnologies/crypto-core-async.git",
   "license": "ISC",
   "dependencies": {
-    "crypto-core": "git+https://github.com/CaspianTechnologies/crypto-core.git#fd966bf9d3ac970a336d5e735f8cabb0b6538aee",
+    "crypto-core": "git+https://github.com/CaspianTechnologies/crypto-core.git#7f9e39a84b6423f6f984adf0c2faa83b0fa6b480",
     "promise-worker": "^1.1.1"
   },
   "devDependencies": {
