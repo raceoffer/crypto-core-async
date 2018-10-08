@@ -2439,7 +2439,7 @@
       }
     },
     "crypto-core": {
-      "version": "git+https://github.com/CaspianTechnologies/crypto-core.git#881d38f97eb1ade7c105c4e037216f3ef2451ede",
+      "version": "git+https://github.com/CaspianTechnologies/crypto-core.git#2788f643cd7a6bec033ccf34c87b2823c8b5118b",
       "requires": {
         "@cityofzion/neon-js": "3.11.0",
         "aes-js": "3.1.1",
