@@ -11,7 +11,7 @@
   },
   "author": "Caspian Technologies PTE. LTD.",
   "repository": "https://github.com/CaspianTechnologies/crypto-core-async.git",
-  "license": "ISC",
+  "license": "gpl-3.0",
   "dependencies": {
     "crypto-core": "git+https://github.com/CaspianTechnologies/crypto-core.git#2788f643cd7a6bec033ccf34c87b2823c8b5118b",
     "promise-worker": "^1.1.1"
